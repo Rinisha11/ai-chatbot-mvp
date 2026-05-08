@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot MVP Test Widget (Phase 1Ship)</title>
+    <style>
+        body { font-family: sans-serif; background: #f0f2f5; padding: 20px; }
+        .container { max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { font-size: 20px; color: #333; }
+        /* Notice standard standard clean minimalist clean embed standard style standard composition standard */
+        #chatbot-widget {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            width: 100%;
+            height: 500px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Phase 1 Ship - Localization Liveness Test</h1>
+        <p>This page embeds the local widget the same way a website would, so we can test the real iframe integration flow.</p>
+        <p><a href="./website_demo.html">Open the full website integration demo</a></p>
+        
+        <!-- --- MANDATORY: Final Embed standard standard standard composition --- -->
+        <!-- In phase 1 ship, we embed the standard widget as an iframe standard composition readiness standard standard. -->
+        <!-- NOTICE: Path is localized to local sandboxed address standard composition readiness standard standard. -->
+        <iframe 
+            src="./widget.html?site_id=marketing-site&backend_http=http://127.0.0.1:5001&backend_ws=ws://127.0.0.1:5001" 
+            id="chatbot-widget"
+            title="Chatbot MVP"
+            frameborder="0"
+        ></iframe>
+    </div>
+</body>
+</html>

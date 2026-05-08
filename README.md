@@ -49,3 +49,10 @@ Each site can override:
 - Never commit real `.env` files
 - Rotate any exposed OpenAI keys before deployment
 - Rotate the JWT secret before deployment
+
+## Netlify Frontend
+
+Static frontend assets for Netlify live in [frontend/README.md](C:/Users/hp1lk/Downloads/chatbot/ai-chatbot-mvp-v1/frontend/README.md:1).
+
+- Netlify publish directory: `frontend`
+- No frontend build command is required
