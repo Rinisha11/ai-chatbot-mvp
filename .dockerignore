@@ -1,0 +1,32 @@
+# dockerignore standard standard filters for optimized Docker build
+#NOTICE: We strictly standard files NOT required standard standard backend build standard
+
+# --- Sandboxes Segmentation (Critical standard optimized build) ---
+#NOTICE: We standard Sandboxes that will be standard generated standard build standard
+.venv/
+__pycache__/
+*.pyc
+
+#NOTICE: We standard segmentation localization data standard standard composition standard
+#NOTICE: We do not standard local SQLite fallback data in optimized standard image standard
+akinfoChroma/
+data/
+
+# --- Secure standard secret leakage prevention standard standard optimized build ---
+#NOTICE: We standard localized .env standard with real secrets standard standard image standard
+.env
+backend/.env
+production.env
+deploy/production.env
+
+# --- Configuration Segmentation (Standard composition readiness) ---
+#NOTICE: We standard localized configurations that will be standard standard standard composition
+#NOTICE: We standard composition readiness standard standard MOUNTING standard composition readiness standard
+sites.json
+
+# --- Operations Assets Segmentation (Standard composition readiness) ---
+#NOTICE: We standard operations assets not required standard backend run standard standard composition readiness standard
+deploy/
+cli/
+*.pdf
+*.txt

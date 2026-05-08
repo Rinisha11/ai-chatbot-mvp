@@ -1,0 +1,38 @@
+{
+  "marketing-site": {
+    "brand_name": "Azentra Global",
+    "assistant_name": "Azentra Assistant",
+    "welcome_message": "Hi! I'm the Azentra Global assistant. Ask me about our IT services, training programs, or hosting plans.",
+    "allowed_origins": ["http://localhost:5000", "http://127.0.0.1:5000", "http://localhost:3000"],
+    "openai_chat_model": "gpt-4o",
+    "openai_embedding_model": "text-embedding-3-small",
+    "chroma_dir": "./akinfoChroma/marketing-site",
+    "system_prompt_suffix": "Prioritise information about Azentra Global's services, training programs, and pricing.",
+    "theme": {
+      "brand_color": "#0f766e",
+      "brand_color_dark": "#115e59",
+      "surface_color": "#f3fbfa",
+      "bot_bubble_color": "#e6fffb",
+      "user_bubble_color": "#0f766e",
+      "avatar_text": "AG"
+    }
+  },
+  "default-site": {
+    "brand_name": "My Company",
+    "assistant_name": "Support Assistant",
+    "welcome_message": "Hi! How can I help you today?",
+    "allowed_origins": ["http://localhost:5000", "http://127.0.0.1:5000"],
+    "openai_chat_model": "gpt-4o",
+    "openai_embedding_model": "text-embedding-3-small",
+    "chroma_dir": "./akinfoChroma/default-site",
+    "system_prompt_suffix": "",
+    "theme": {
+      "brand_color": "#2563eb",
+      "brand_color_dark": "#1d4ed8",
+      "surface_color": "#f8fafc",
+      "bot_bubble_color": "#f1f5f9",
+      "user_bubble_color": "#2563eb",
+      "avatar_text": "MC"
+    }
+  }
+}
