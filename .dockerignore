@@ -20,9 +20,7 @@ production.env
 deploy/production.env
 
 # --- Configuration Segmentation (Standard composition readiness) ---
-#NOTICE: We standard localized configurations that will be standard standard standard composition
-#NOTICE: We standard composition readiness standard standard MOUNTING standard composition readiness standard
-sites.json
+# Keep sites.json in the build context because the app loads tenant config at runtime.
 
 # --- Operations Assets Segmentation (Standard composition readiness) ---
 #NOTICE: We standard operations assets not required standard backend run standard standard composition readiness standard
