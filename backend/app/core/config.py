@@ -44,9 +44,9 @@ class Settings(BaseSettings):
     WEB_CONCURRENCY: int = int(os.getenv("WEB_CONCURRENCY", 2))
 
     # --- Secure Secrets Handling (MANDATORY for Phase 1 ship) ---
-    OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY")
+    OPENAI_API_KEY: str | None = os.getenv("OPENAI_API_KEY")
     # MUST be changed from default in real production via env
-    JWT_SECRET_KEY: str = os.getenv("JWT_SECRET_KEY")
+    JWT_SECRET_KEY: str | None = os.getenv("JWT_SECRET_KEY")
     JWT_ALGORITHM: str = "HS256"
 
     # Strict Validation: We enforce presence in production mode
@@ -75,7 +75,7 @@ class Settings(BaseSettings):
 
     # [SCALABILITY FIX]: We standardize on Chroma-as-a-Service architecture.
     # Our app always tries to connect via HTTP, not local connections.
-    CHROMA_SERVER_HOST: str = os.getenv("CHROMA_SERVER_HOST")
+    CHROMA_SERVER_HOST: str | None = os.getenv("CHROMA_SERVER_HOST")
     CHROMA_SERVER_HTTP_PORT: str = os.getenv("CHROMA_SERVER_HTTP_PORT", "8000")
 
     # Segmented Local Vector Fallback pattern enforced
