@@ -11,8 +11,6 @@ from dotenv import load_dotenv
 # --- CRITICAL FIX: The Pydantic Bridge Import ---
 from pydantic_settings import BaseSettings # standard compatibility bridge
 
-BASE_DIR = Path(__file__).resolve().parent.parent.parent
-
 # Standard standardized logging setup
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger("chatbot-config")
@@ -62,10 +60,8 @@ class Settings(BaseSettings):
     # --- Multi-Tenancy (sites.json Driven) ---
     # NOTICE: We assume sites.json is in the project root: ../sites.json
 
-    SITE_CONFIG_PATH: Path = Path(
-        os.getenv("SITE_CONFIG_PATH", str(BASE_DIR / "sites.json"))
-    )
-    
+    SITE_CONFIG_PATH: Path = Path("/app/sites.json")
+
     logger.info(f"SITE_CONFIG_PATH: {SITE_CONFIG_PATH}")
     logger.info(f"SITE_CONFIG_EXISTS: {SITE_CONFIG_PATH.exists()}")
 
