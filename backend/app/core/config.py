@@ -59,8 +59,15 @@ class Settings(BaseSettings):
 
     # --- Multi-Tenancy (sites.json Driven) ---
     # NOTICE: We assume sites.json is in the project root: ../sites.json
-    SITE_CONFIG_PATH: Path = Path(os.getenv("SITE_CONFIG_PATH", "sites.json"))
+    BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent
+
+    SITE_CONFIG_PATH: Path = Path(
+        os.getenv("SITE_CONFIG_PATH", str(BASE_DIR / "sites.json"))
+    )
     
+    logger.info(f"SITE_CONFIG_PATH: {SITE_CONFIG_PATH}")
+    logger.info(f"SITE_CONFIG_EXISTS: {SITE_CONFIG_PATH.exists()}")
+
     # Pre-calculated allowed origins parsed from env
     @property
     def ALLOWED_ORIGINS(self) -> list[str]:
