@@ -3,9 +3,9 @@
   if (!script) return;
 
   const siteId = script.dataset.siteId || "marketing-site";
-  const widgetUrl = script.dataset.widgetUrl || "http://127.0.0.1:5500/widget.html";
-  const backendHttp = script.dataset.backendHttp || "http://127.0.0.1:5001";
-  const backendWs = script.dataset.backendWs || "ws://127.0.0.1:5001";
+  const widgetUrl = script.dataset.widgetUrl || "http://chatbot-mvp-ai.netlify.app/widget.html";
+  const backendHttp = script.dataset.backendHttp || "https://ai-chatbot-mvp-production.up.railway.app";
+  const backendWs = script.dataset.backendWs || "wss://ai-chatbot-mvp-production.up.railway.app";
   const mode = script.dataset.mode || "popup";
   const inlineTarget = script.dataset.inlineTarget || "";
   const launcherLabel = script.dataset.launcherLabel || "Chat with us";

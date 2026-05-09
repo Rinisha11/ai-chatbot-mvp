@@ -3,7 +3,7 @@
     "brand_name": "Azentra Global",
     "assistant_name": "Azentra Assistant",
     "welcome_message": "Hi! I'm the Azentra Global assistant. Ask me about our IT services, training programs, or hosting plans.",
-    "allowed_origins": ["http://localhost:5000", "http://127.0.0.1:5000", "http://localhost:3000", "https://ai-chatbot-mvp-production.up.railway.app"],
+    "allowed_origins": ["http://localhost:5000", "http://127.0.0.1:5000", "http://localhost:3000", "https://chatbot-mvp-ai.netlify.app","https://ai-chatbot-mvp-production.up.railway.app"],
     "openai_chat_model": "gpt-4o",
     "openai_embedding_model": "text-embedding-3-small",
     "chroma_dir": "./akinfoChroma/marketing-site",
