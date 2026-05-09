@@ -32,9 +32,9 @@ def create_application() -> FastAPI:
     app.add_middleware(
         CORSMiddleware,
         # NOTICE: We use pre-calculated singleton ALLOWED_ORIGINS from config service
-        allow_origins=["*"],
+        allow_origins=settings.ALLOWED_ORIGINS,
         # credentials standard is handled based on origin restrictions
-        allow_credentials=False,
+        allow_credentials="*" not in settings.ALLOWED_ORIGINS,
         # Allow common standard methods for SaaS APIs standard standard
         allow_methods=["GET", "POST", "OPTIONS"],
         allow_headers=["*"],

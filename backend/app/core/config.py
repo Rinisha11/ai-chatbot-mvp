@@ -59,7 +59,7 @@ class Settings(BaseSettings):
 
     # --- Multi-Tenancy (sites.json Driven) ---
     # NOTICE: We assume sites.json is in the project root: ../sites.json
-    SITE_CONFIG_PATH: Path = Path(os.getenv("SITE_CONFIG_PATH", "../sites.json"))
+    SITE_CONFIG_PATH: Path = Path(os.getenv("SITE_CONFIG_PATH", "sites.json"))
     
     # Pre-calculated allowed origins parsed from env
     @property
