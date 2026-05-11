@@ -3,7 +3,7 @@
   if (!script) return;
 
   const siteId = script.dataset.siteId || "marketing-site";
-  const widgetUrl = script.dataset.widgetUrl || "https://chatbot-mvp-ai.netlify.app//widget.html";
+  const widgetUrl = script.dataset.widgetUrl || "https://ai-chatbot-mvp-v2.netlify.app//widget.html";
   const backendHttp = script.dataset.backendHttp || "https://ai-chatbot-mvp-production.up.railway.app";
   const backendWs = script.dataset.backendWs || "wss://ai-chatbot-mvp-production.up.railway.app";
   const mode = script.dataset.mode || "popup";

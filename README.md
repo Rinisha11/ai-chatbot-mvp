@@ -56,3 +56,6 @@ Static frontend assets for Netlify live in [frontend/README.md](C:/Users/hp1lk/D
 
 - Netlify publish directory: `frontend`
 - No frontend build command is required
+
+
+Netlify live url- https://ai-chatbot-mvp-v2.netlify.app
